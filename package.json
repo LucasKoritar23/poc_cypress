@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "cypress": "^8.3.1",
+    "cypress-cucumber-preprocessor": "^4.2.0"
+  },
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome",
+    "test:chromium": "cypress run --browser chromium",
+    "test:firefox": "cypress run --browser firefox"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  }
+}
